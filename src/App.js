@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+// App.js
+import React, { Component } from 'react';
+import Login from './Login';
+import Principal from './Paginas/Principal';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    isLoggedIn: false,
+  };
+
+  handleLogin = () => {
+    this.setState({ isLoggedIn: true });
+  };
+
+  handleLogout = () => {
+    this.setState({ isLoggedIn: false });
+  };
+
+  render() {
+    const { isLoggedIn } = this.state;
+
+    let content = null;
+
+    if (isLoggedIn) {
+      // Si está autenticado, mostrar la página de Operaciones
+      content = <Principal onLogout={this.handleLogout} />;
+    } else {
+      // Si no está autenticado, mostrar la página de Login y establecer handleLogin como callback
+      content = <Login onLogin={this.handleLogin} />;
+    }
+
+    return (
+      <div className="LogOut">
+        {content}
+        {this.state.isLoggedIn && (
+          <button className='logaut' onClick={this.handleLogout}>Cerrar Sesión</button>
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+body {
+    background-image: url('../../public/Assets/login/login_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+  
+  }
+
+  /* Estilo del contenedor del formulario */
+.Login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Ajusta la altura al 100% del viewport (ventana del navegador) */
+    width: 100%;
+    /* background-color: red; */
+  }
+  
+  /* Estilo del formulario */
+  .Login {
+    padding: 20px;
+    width: 25%; /* Ancho aproximado del 25% */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Login img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+  }
+
+
+  /* Estilo del formulario */
+form {
+    background-color: rgba(216, 216, 216, 0.9); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 15px; /* Esquinas redondeadas */
+    width: 100%; /* Ancho aproximado del 25% */
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  }
+  
+  /* Estilo de los campos de entrada y el botón */
+  .username, .password, .iniciar-sesion {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  button {
+    background-color: #65537E; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse por encima */
+  }
+  
+  /* Estilo del logotipo */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  

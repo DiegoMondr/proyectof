@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Estilos para el contenedor principal */
+  .main {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el título */
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .title h1 {
+    color: rgb(112, 15, 187)010;
+    font-size: 30px;
+    font-weight: 700;
+
+  }
+  
+  /* Estilos para el contenido */
+  .content {
+    padding: 20px;
+  }
+  
+  /* Estilos para la información */
+  .informacion h2 {
+    color: #3c006d;
+    margin-bottom: 10px;
+  }
+  
+  .informacion p {
+    color: #666;
+    line-height: 1.6;
+    font-size: larger;
+  }
+  
+.span{
+  color:'black';
+  font-size: 23px;
+  font-weight: 700;
+}
+
+  /* Estilos para enlaces */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
